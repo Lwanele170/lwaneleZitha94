@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Somatekisi Car Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <!-- Added Logo Image -->
+            <img src="Taxi.jpg" alt="Somatekisi Car Services Logo" class="logo-img">
+            <span>Somatekisi Car Services</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Service & Community Enquiry Form</h2>
+        <p>Please fill out the form below to inquire about services, schedule maintenance, or get involved with our community initiatives.</p>
+
+        <!-- Interactive Form Section -->
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-type">Select Enquiry Type:</label>
+                <select id="service-type" name="service-type" required>
+                    <option value="">-- Choose an option --</option>
+                    <optgroup label="Car Services">
+                        <option value="minor-service">Minor Service</option>
+                        <option value="major-service">Major Service</option>
+                        <option value="brakes">Brakes & Clutch</option>
+                        <option value="diagnostics">Computer Diagnostics</option>
+                    </optgroup>
+                    <!-- Added Rubric Requirement for Volunteer/Sponsor Options -->
+                    <optgroup label="Community & Partnerships">
+                        <option value="sponsorship">Become a Sponsor</option>
+                        <option value="volunteer">Volunteer Opportunities</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="details">Additional Notes / Vehicle Details:</label>
+                <textarea id="details" name="details" rows="5" placeholder="Include your vehicle model and year, or details regarding sponsorship/volunteering..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Enquiry</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Somatekisi Car Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
