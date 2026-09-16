@@ -8,8 +8,15 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <div class="logo">Somatekisi Car Services</div>
+        <div class="logo">
+            <img src="images/Taxi.png"
+                 alt="Somatekisi Car Services Logo"
+                 class="logo-img">
+            <span>Somatekisi Car Services</span>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,33 +28,75 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
+
         <h2>Our Offerings</h2>
-        <p>Explore our wide range of automotive repair and preventative maintenance options:</p>
 
-        <!-- Detailed List of Services with Images -->
+        <p>
+            Explore our wide range of automotive repair and preventative
+            maintenance options:
+        </p>
+
+        <!-- Services -->
         <div class="card-grid">
+
             <div class="card">
-                <!-- Image path relative to the root html file -->
-                <img src="engine.png" alt="Engine maintenance and minor/major servicing">
+                <img src="images/engine.png"
+                     alt="Engine maintenance and minor/major servicing"
+                     srcset="images/engine.png 800w,
+                             images/engine.png 1200w"
+                     sizes="(max-width: 600px) 100vw,
+                            (max-width: 900px) 50vw,
+                            33vw">
+
                 <h3>Major & Minor Services</h3>
-                <p>Full engine inspection, oil change, spark plug replacement, and filter checks to ensure roadworthiness.</p>
+
+                <p>
+                    Full engine inspection, oil change, spark plug
+                    replacement, and filter checks to ensure roadworthiness.
+                </p>
             </div>
 
             <div class="card">
-                <img src="brake repair.png" alt="Brake pad replacement and clutch repairs">
+                <img src="images/brake repair.png"
+                     alt="Brake pad replacement and clutch repairs"
+                     srcset="images/brake repair.png 800w,
+                             images/brake repair.png 1200w"
+                     sizes="(max-width: 600px) 100vw,
+                            (max-width: 900px) 50vw,
+                            33vw">
+
                 <h3>Brake & Clutch Repairs</h3>
-                <p>Precision pad replacement, disc resurfacing, and full hydraulic system inspections.</p>
+
+                <p>
+                    Precision pad replacement, disc resurfacing, and full
+                    hydraulic system inspections.
+                </p>
             </div>
 
             <div class="card">
-                <img src="diagnostics.png" alt="Computerized car diagnostic check">
+                <img src="images/diagnostics.png"
+                     alt="Computerized car diagnostic check"
+                     srcset="images/diagnostics.png 800w,
+                             images/diagnostics.png 1200w"
+                     sizes="(max-width: 600px) 100vw,
+                            (max-width: 900px) 50vw,
+                            33vw">
+
                 <h3>Computerized Diagnostics</h3>
-                <p>Advanced electronic fault code scanning to quickly troubleshoot motor issues.</p>
+
+                <p>
+                    Advanced electronic fault code scanning to quickly
+                    troubleshoot motor issues.
+                </p>
             </div>
+
         </div>
+
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Somatekisi Car Services. All Rights Reserved.</p>
     </footer>

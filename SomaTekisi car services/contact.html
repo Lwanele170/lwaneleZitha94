@@ -6,79 +6,117 @@
     <title>Contact Us - Somatekisi Car Services</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <header>
         <div class="logo">
-            <!-- Added Header Logo -->
-            <img src="logo.png" alt="Somatekisi Car Services Logo" class="logo-img">
+            <img src="images/Taxi.png" alt="Somatekisi Car Services Logo" class="logo-img">
             <span>Somatekisi Car Services</span>
         </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+
         <h2>Contact Us</h2>
 
-        <!-- Multiple Locations Section with Branch Images -->
+        <p>
+            Get in touch with Somatekisi Car Services for reliable vehicle
+            maintenance, repairs and general enquiries.
+        </p>
+
         <section class="card-grid">
+
             <div class="card">
-                <img src="jhb-branch.png" alt="Johannesburg Central Workshop">
-                <h3>Johannesburg Central Branch</h3>
-                <p><strong>Address:</strong> 45 Commissioner Street, Johannesburg</p>
-                <p><strong>Phone:</strong> 071 234 5678</p>
-                <p><strong>Email:</strong> jhb@somatekisi.co.za</p>
+                <img src="images/jhb-branch.png"
+                     alt="Somatekisi Car Services Johannesburg Branch">
+
+                <h3>Johannesburg Branch</h3>
+
+                <p>
+                    Visit or contact our Johannesburg branch for vehicle
+                    maintenance and repair services.
+                </p>
+
+                <p>
+                    <strong>Location:</strong> Johannesburg, Gauteng
+                </p>
             </div>
 
             <div class="card">
-                <img src="pta-branch.png" alt="Pretoria Workshop Branch">
-                <h3>Pretoria Workshop Branch</h3>
-                <p><strong>Address:</strong> 12 Paul Kruger Street, Pretoria</p>
-                <p><strong>Phone:</strong> (012) 555-0244</p>
-                <p><strong>Email:</strong> pta@somatekisi.co.za</p>
+                <img src="images/pta-branch.png"
+                     alt="Somatekisi Car Services Pretoria Branch">
+
+                <h3>Pretoria Branch</h3>
+
+                <p>
+                    Our Pretoria branch provides reliable vehicle services
+                    for taxi operators and other customers.
+                </p>
+
+                <p>
+                    <strong>Location:</strong> Pretoria, Gauteng
+                </p>
             </div>
+
         </section>
 
-        <!-- Embedded Map Requirement -->
-        <section style="margin-top: 2rem;">
+        <section>
             <h3>Our Location Map</h3>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.7388725807!2d27.96263595!3d-26.2041028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1680000000000" 
-                width="100%" 
-                height="300" 
-                style="border:0; border-radius: 8px;" 
-                allowfullscreen="" 
-                loading="lazy">
+
+            <iframe
+                class="map"
+                src="https://www.google.com/maps?q=Johannesburg,South+Africa&output=embed"
+                title="Map showing the Somatekisi Car Services location"
+                loading="lazy"
+                allowfullscreen>
             </iframe>
         </section>
 
-        <!-- Quick Contact Form -->
-        <section style="margin-top: 2rem;">
+        <section>
             <h3>Direct Message</h3>
+
             <form action="#" method="POST">
+
                 <div class="form-group">
-                    <label for="contact-name">Name:</label>
-                    <input type="text" id="contact-name" name="name" required>
+                    <label for="contact-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
                 </div>
+
                 <div class="form-group">
-                    <label for="contact-msg">Message:</label>
-                    <textarea id="contact-msg" name="message" rows="4" required></textarea>
+                    <label for="contact-message">Message</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="5"
+                        placeholder="Enter your message"
+                        required></textarea>
                 </div>
+
                 <button type="submit" class="btn">Send Message</button>
+
             </form>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Somatekisi Car Services. All Rights Reserved.</p>
+        <p>&copy; 2025 Somatekisi Car Services. All rights reserved.</p>
     </footer>
 
 </body>
