@@ -16,7 +16,7 @@ body {
     background-color: #f5f5f5;
 }
 
-/* ---------- Header and Navigation ----------* /
+/* ---------- Header and Navigation ---------- */
 
 header {
     background-color: #111827;
@@ -289,6 +289,7 @@ footer p {
 /* ---------- Tablet Layout ---------- */
 
 @media (max-width: 900px) {
+
     header {
         justify-content: center;
     }
@@ -309,6 +310,7 @@ footer p {
 /* ---------- Mobile Layout ---------- */
 
 @media (max-width: 600px) {
+
     header {
         padding: 1rem 4%;
         flex-direction: column;

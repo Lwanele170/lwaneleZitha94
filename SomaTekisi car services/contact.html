@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Somatekisi Car Services</title>
+
+    <!-- SEO Metadata -->
+    <title>Contact Us | Somatekisi Car Services</title>
+    <meta name="description" content="Contact Somatekisi Car Services for vehicle maintenance and repair enquiries. Find our Johannesburg and Pretoria branches.">
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -11,7 +16,12 @@
 
     <header>
         <div class="logo">
-            <img src="images/Taxi.png" alt="Somatekisi Car Services Logo" class="logo-img">
+            <img src="images/Taxi.png"
+                 alt="Somatekisi Car Services Logo"
+                 class="logo-img"
+                 width="150"
+                 height="80">
+
             <span>Somatekisi Car Services</span>
         </div>
 
@@ -28,65 +38,78 @@
 
     <main>
 
-        <h2>Contact Us</h2>
+        <h1>Contact Somatekisi Car Services</h1>
 
         <p>
             Get in touch with Somatekisi Car Services for reliable vehicle
             maintenance, repairs and general enquiries.
         </p>
 
-        <section class="card-grid">
+        <!-- Branch Information -->
+        <section>
+            <h2>Our Branches</h2>
 
-            <div class="card">
-                <img src="images/jhb-branch.png"
-                     alt="Somatekisi Car Services Johannesburg Branch">
+            <div class="card-grid">
 
-                <h3>Johannesburg Branch</h3>
+                <div class="card">
+                    <img src="images/jhb-branch.png"
+                         alt="Somatekisi Car Services Johannesburg Branch"
+                         width="400"
+                         height="300"
+                         loading="lazy">
 
-                <p>
-                    Visit or contact our Johannesburg branch for vehicle
-                    maintenance and repair services.
-                </p>
+                    <h3>Johannesburg Branch</h3>
 
-                <p>
-                    <strong>Location:</strong> Johannesburg, Gauteng
-                </p>
+                    <p>
+                        Visit or contact our Johannesburg branch for vehicle
+                        maintenance and repair services.
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong> Johannesburg, Gauteng
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="images/pta-branch.png"
+                         alt="Somatekisi Car Services Pretoria Branch"
+                         width="400"
+                         height="300"
+                         loading="lazy">
+
+                    <h3>Pretoria Branch</h3>
+
+                    <p>
+                        Our Pretoria branch provides reliable vehicle services
+                        for taxi operators and other customers.
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong> Pretoria, Gauteng
+                    </p>
+                </div>
+
             </div>
-
-            <div class="card">
-                <img src="images/pta-branch.png"
-                     alt="Somatekisi Car Services Pretoria Branch">
-
-                <h3>Pretoria Branch</h3>
-
-                <p>
-                    Our Pretoria branch provides reliable vehicle services
-                    for taxi operators and other customers.
-                </p>
-
-                <p>
-                    <strong>Location:</strong> Pretoria, Gauteng
-                </p>
-            </div>
-
         </section>
 
+        <!-- Location Map -->
         <section>
-            <h3>Our Location Map</h3>
+            <h2>Our Location Map</h2>
 
             <iframe
                 class="map"
                 src="https://www.google.com/maps?q=Johannesburg,South+Africa&output=embed"
-                title="Map showing the Somatekisi Car Services location"
+                title="Map showing Johannesburg, South Africa"
                 loading="lazy"
                 allowfullscreen>
             </iframe>
         </section>
 
+        <!-- Contact Form -->
         <section>
-            <h3>Direct Message</h3>
+            <h2>Send Us a Message</h2>
 
-            <form action="#" method="POST">
+            <form id="contactForm">
 
                 <div class="form-group">
                     <label for="contact-name">Full Name</label>
@@ -95,7 +118,9 @@
                         id="contact-name"
                         name="name"
                         placeholder="Enter your full name"
-                        required>
+                        autocomplete="name"
+                        required
+                        minlength="3">
                 </div>
 
                 <div class="form-group">
@@ -105,10 +130,13 @@
                         name="message"
                         rows="5"
                         placeholder="Enter your message"
-                        required></textarea>
+                        required
+                        minlength="10"></textarea>
                 </div>
 
                 <button type="submit" class="btn">Send Message</button>
+
+                <p id="contactFormMessage" role="status" aria-live="polite"></p>
 
             </form>
         </section>
@@ -116,8 +144,32 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Somatekisi Car Services. All rights reserved.</p>
+        <p>&copy; 2026 Somatekisi Car Services. All rights reserved.</p>
     </footer>
+
+    <script>
+        const contactForm = document.getElementById("contactForm");
+        const contactFormMessage = document.getElementById("contactFormMessage");
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                return;
+            }
+
+            contactFormMessage.textContent =
+                "Thank you! Your message has been validated successfully.";
+
+            contactFormMessage.style.color = "green";
+
+            contactForm.reset();
+
+        });
+    </script>
 
 </body>
 </html>
+
